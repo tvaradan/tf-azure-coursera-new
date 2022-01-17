@@ -15,7 +15,6 @@ resource "azurerm_network_security_group" "myterraformnsg" {
     destination_address_prefix = "*"
   }
 
-  tags = {
-    "environment" = var.tags
-  }
+  tags = var.tags
+  
 }
