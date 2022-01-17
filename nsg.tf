@@ -16,6 +16,6 @@ resource "azurerm_network_security_group" "myterraformnsg" {
   }
 
   tags = {
-    environment = var.tags
+    "environment" = var.tags
   }
 }
